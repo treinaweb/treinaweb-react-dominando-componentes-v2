@@ -1,30 +1,22 @@
+import { useState } from 'react';
 import './App.css';
 
-function Perfil({nome, ...props}) {
+function Contador({numero, ...props}) {
   return (
-    <ul>
-      <li>{nome}</li>
-      <li>{props.idade}</li>
-      <li>{props.email}</li>
-      <li>{props.cep}</li>
-
-    </ul>
+    <>
+      <span>{numero}</span><br />
+      <button {...props }>Somar</button>
+    </>
   )
 }
 
 function App() {
-
-  const pessoa = {
-    nome: "Bruno",
-    idade: 30,
-    email: "marcia@gmail.com",
-    cep: "07090000"
-  }
+  const [contador, setContador] = useState(0);
 
   return (
-    <Perfil
-      {... pessoa}
-    />
+    <Contador 
+      numero={contador} 
+      onClick={() => setContador(contador + 1)}/>
   )
 }
 
