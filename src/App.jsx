@@ -1,19 +1,22 @@
 import './App.css';
 
-function MeuComponente() {
-  return <h1>Meu Componente</h1>
-}
-
-const MeuComponente2 = () => {
-  return <h2>Componente 2</h2>
+const MeusComponentes = {
+  MeuComponente1: function () {
+    return <h1>Meu Componente</h1>
+  },
+  MeuComponente2: function () {
+    return <h2>Componente 2</h2>
+  }
 }
 
 function App() {
 
+  const nomeComponente = 'MeuComponente2';
+  const ComponenteEscolhido = MeusComponentes[nomeComponente];
+
   return (
     <>
-      <MeuComponente />
-      <MeuComponente2 />
+      <ComponenteEscolhido />
     </>
   )
 }
