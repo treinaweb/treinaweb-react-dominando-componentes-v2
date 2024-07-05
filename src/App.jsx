@@ -1,9 +1,9 @@
 import './App.css';
 
-function Perfil(props) {
+function Perfil({nome, ...props}) {
   return (
     <ul>
-      <li>{props.nome}</li>
+      <li>{nome}</li>
       <li>{props.idade}</li>
       <li>{props.email}</li>
       <li>{props.cep}</li>
@@ -15,7 +15,7 @@ function Perfil(props) {
 function App() {
 
   const pessoa = {
-    nome: "Paula",
+    nome: "Bruno",
     idade: 30,
     email: "marcia@gmail.com",
     cep: "07090000"
