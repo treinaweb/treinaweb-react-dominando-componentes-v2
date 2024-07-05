@@ -1,13 +1,30 @@
 import './App.css';
 
-function MeuComponente(props) {
-  return <h1>{props.nome}</h1>
+function Perfil(props) {
+  return (
+    <ul>
+      <li>{props.nome}</li>
+      <li>{props.idade}</li>
+      <li>{props.email}</li>
+      <li>{props.cep}</li>
+
+    </ul>
+  )
 }
 
 function App() {
 
+  const pessoa = {
+    nome: "Paula",
+    idade: 30,
+    email: "marcia@gmail.com",
+    cep: "07090000"
+  }
+
   return (
-      <MeuComponente nome="TreinaWeb - Escolha de tecnologia"/>
+    <Perfil
+      {... pessoa}
+    />
   )
 }
 
