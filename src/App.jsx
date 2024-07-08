@@ -14,14 +14,14 @@ function App() {
   const [contador, setContador] = useState(0);
 
 
-  function handleClick() {
-    setContador(contador + 1);
+  function handleClick(numero) {
+    setContador(contador + numero);
   }
 
   return (
     <Contador
       numero={contador}
-      onClick={handleClick} />
+      onClick={() => {handleClick(2)}} />
   )
 }
 
