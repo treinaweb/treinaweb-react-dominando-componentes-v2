@@ -4,8 +4,20 @@ import './App.css';
 function Contador({ numero, ...props }) {
 
   useEffect(() => {
+    const meuIntervalo  = setInterval(() => {
+      console.log('intervalo 2s');
+    }, 2000)
+
+    function evento() {
+
+    }
+
+    element.addEventListener('x', evento)
+
     console.log('Componente Criado');
     return () => {
+      clearInterval(meuIntervalo);
+      element.removeEventListener('x', evento)
       console.log('Componente Removido');
     }
   });
