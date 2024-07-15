@@ -8,11 +8,15 @@ function App() {
     { id: 4, nome: 'Marcela', idade: 45 },
   ];
 
+  function exibirNome(nome) {
+    console.log(nome);
+  }
+
   return (
     <div>
       <ul>
         {minhaLista.map((pessoa, index) => (
-          <li key={index}>
+          <li key={index} onClick={() => exibirNome(pessoa.nome)}>
             {`Nome: ${pessoa.nome} - Idade: ${pessoa.idade}`}
           </li>
         ))}
