@@ -1,18 +1,32 @@
+import { createContext, useContext } from 'react';
 import './App.css';
-import { useEffect, useRef } from 'react';
+
+const UserContext = createContext({});
+
+function UsuarioLogadoPerfil(props) {
+  const { nome } = useContext(UserContext);
+  return (
+    <>
+      <h1>{nome}</h1>
+      <UsuarioLogadoDetalhes />
+    </>
+  )
+}
+
+function UsuarioLogadoDetalhes(props) {
+  const { detalhe } = useContext(UserContext);
+  return <p>{detalhe}</p>
+}
 
 function App() {
-  const meuVideo = useRef();
-
-  useEffect(()=> {
-    console.log(meuVideo.current);
-    meuVideo.current.play();
-  })
-
+  const user = {
+    nome: 'Paulo',
+    detalhes: 'Engenheiro',
+  }
   return (
-    <div>
-      <video ref={meuVideo}/>
-    </div>
+  <UserContext.Provider value={{nome: user.nome, detalhe: user.detalhes}}>
+    <UsuarioLogadoPerfil />
+  </UserContext.Provider>
   )
 }
 
