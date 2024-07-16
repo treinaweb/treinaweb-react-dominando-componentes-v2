@@ -1,17 +1,18 @@
-import React from 'react';
 import './App.css';
-
-function MeuComponente(props) {
-  return (
-    <div>
-      {props.children}
-    </div>
-  )
-}
+import { useEffect, useRef } from 'react';
 
 function App() {
+  const meuVideo = useRef();
+
+  useEffect(()=> {
+    console.log(meuVideo.current);
+    meuVideo.current.play();
+  })
+
   return (
-    <MeuComponente><h1>Meu Site</h1><br /><p>Descrição do Site</p></MeuComponente>
+    <div>
+      <video ref={meuVideo}/>
+    </div>
   )
 }
 
