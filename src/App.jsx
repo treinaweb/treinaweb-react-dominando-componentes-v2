@@ -1,29 +1,17 @@
 import React from 'react';
 import './App.css';
 
-function Lista() {
+function MeuComponente(props) {
   return (
-    <>
-      <li>Dados da minha lista</li>
-      <li>Dados da minha lista</li>
-    </>
+    <div>
+      {props.children}
+    </div>
   )
 }
 
 function App() {
-
   return (
-    <div>
-      <ul>
-        {[1, 2, 3].map((numero, index) => (
-          <React.Fragment key={index}>
-            <li>Elemnto 1</li>
-            <li>Elemnto 2</li>
-            <li>Elemnto 3</li>
-          </React.Fragment>
-        ))}
-      </ul>
-    </div>
+    <MeuComponente><h1>Meu Site</h1><br /><p>Descrição do Site</p></MeuComponente>
   )
 }
 
