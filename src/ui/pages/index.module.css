@@ -1,0 +1,6 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 81px);
+  justify-content: space-between;
+}

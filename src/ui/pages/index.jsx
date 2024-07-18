@@ -1,7 +1,6 @@
-import { useState } from "react";
 import MusicList from "../components/data-display/MusicList/MusicList";
-import Timeline from "../components/inputs/Timeline/Timeline";
 import AudioPlayer from "../components/data-display/AudioPlayer/AudioPlayer";
+import styles from "./index.module.css";
 
 const musics = [
   {
@@ -21,9 +20,8 @@ const musics = [
 ]
 
 export default function Index() {
-  const [width, setWidth] = useState(20);
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <MusicList 
         musics={musics}
         selectedMusic={musics[0]} 
