@@ -1,8 +1,25 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Lista de commits
+Aula | Commit | Link
+------ | ------ | ------
+Aula 02 | Criando componentes funcionais | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/7b2276abaf21736ba2b61befc06ec2f0d2df6be8.zip)
+Aula 02 | Acessando Componentes de objetos | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/a007bc6b73a9faad80083862be7dd6101683ce40.zip)
+Aula 03 | Propriedades de um componente | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/2d10fda25464e478bc8fe2430cac5d10abebde76.zip)
+Aula 03 | Propriedades e operador spread | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/4e0c27888aff601355994575bf5f9d8fa5b97bc4.zip)
+Aula 03 | Extração de Variaveis das propriedades | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/9c078d0f4bba55b78b40df7e4fac1aad00a2f5e9.zip)
+Aula 03 | Estados - useState | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/0de0a60b5e3f696632fc858bb1e9d729bcfe0ae6.zip)
+Aula 04 | Trabalhando com eventos | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/251aa4ebaa80d194d71802e661894b3df541641e.zip)
+Aula 04 | Passando parâmetros | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/2d1c168c8cb9291c8d62a5598482e92a9746ec1b.zip)
+Aula 04 | Efeitos - useEffect | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/918eec61dcc975daad775f1aa7227c15fcdc6f2b.zip)
+Aula 04 | Ciclo de vida dos componentes | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/6b60ef655324938340e258674f0ebd3e8b903056.zip)
+Aula 04 | Problemas com eventos de elementos | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/4acdd20fbfde64d9202f868989063214f1b70c78.zip)
+Aula 05 | Keys | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/6f927795c1657c7d2130b35682c9eb7134d3cada.zip)
+Aula 05 | Parametros de funcoes | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/e4230aa599d63972e8595f616f5b8683dbb305c3.zip)
+Aula 05 | Fragmentos | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/3197fe486067e13d308b30a45010fab3d98dfc04.zip)
+Aula 06 | Elementos Filho | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/1112cc06127349f78b67da21ed92a06d3237deea.zip)
+Aula 06 | Criando referências | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/ddde2094dd4ebe05f5284a3977c2e6990af7c239.zip)
+Aula 07 | Compartilhando dados | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/57d55d7c17179a4bea7573bf1b5fa88a5d0c2e08.zip)
+Projeto | Componente Base lista de músicas | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/7ad71d3492eb11b81c28ffa4d073bf994b24873a.zip)
+Projeto | Componente Lista de músicas | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/aaade4437083bf8faf359f2a416ce5666773cc54.zip)
+Projeto | Interação com a timeline | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/7376c29b697ea25aaf27aaa71b1aadd54f468381.zip)
+Projeto | Criação do componente audio player | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/1d4f7982590db10a21b15799a80c5d3b6be74bb2.zip)
+Projeto | Ajustando index | [Download](https://github.com/treinaweb/treinaweb-react-dominando-componentes-v2/archive/2f97f4adb947fbd0cfb30050d753b8af9292b0d5.zip)
